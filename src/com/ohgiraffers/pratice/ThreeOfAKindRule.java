@@ -4,7 +4,6 @@ import java.util.Map;
 
 import static com.ohgiraffers.pratice.YachtUtils.countDice;
 
-// 2. Three of a Kind
 public class ThreeOfAKindRule extends ScoreRule {
     public ThreeOfAKindRule() {
         super("Three of a Kind");

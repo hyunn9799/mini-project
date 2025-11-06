@@ -1,6 +1,5 @@
 package com.ohgiraffers.pratice;
 
-// 1. Ones ~ Sixes (같은 숫자 합계)
 public class NumberRule extends ScoreRule {
     private int number;
 
@@ -20,6 +19,6 @@ public class NumberRule extends ScoreRule {
 
     @Override
     public boolean isApplicable(int[] dice) {
-        return true; // 언제나 선택 가능
+        return true;
     }
 }
