@@ -4,18 +4,32 @@ import com.ohgiraffers.yacht.rule.*;
 
 import java.util.*;
 
-
 public class YachtDiceGame {
     private static List<ScoreRule> rules = new ArrayList<>();
     private static Map<String, Integer> scoreboard = new HashMap<>();
     private static Scanner sc = new Scanner(System.in);
 
+    private static final String[] BIG_DICE = {
+            "⣿⣿⣿⠟⢉⡉⠻⣿⣿⣿",
+            "⡿⠋⣠⣾⠟⠻⣷⣄⠙⢿",
+            "⡇⠟⢢⡙⢷⡾⢋⡴⢿⢸",
+            "⡇⣷⡈⢹⡆⢰⠿⣷⣾⢸",
+            "⣷⣌⠻⣀⡆⢸⣶⠟⣡⣾",
+            "⣿⣿⣿⣦⣁⣈⣴⣿⣿⣿"
+    };
+
     public static void main(String[] args) {
+        printBigDice();
+        System.out.println("\n🎲 요트다이스 게임에 오신 걸 환영합니다! 🎲\n");
+
+        // 게임 시작 대기
+        System.out.print("게임을 시작하시겠습니까? (아무 키나 누르세요...) ");
+        sc.nextLine();
+
         initRules();
-        System.out.println("🎲 요트다이스 게임에 오신 걸 환영합니다! 🎲\n");
 
         for (int turn = 1; turn <= 12; turn++) {
-            System.out.println("=== 턴 " + turn + " ===");
+            System.out.println("\n=== 턴 " + turn + " ===");
             int[] dice = rollDice();
             System.out.println("주사위: " + Arrays.toString(dice));
 
@@ -25,10 +39,21 @@ public class YachtDiceGame {
         }
 
         int total = scoreboard.values().stream()
-                .filter(score -> score != -1) // -1(미사용) 제외
+                .filter(score -> score != -1)
                 .mapToInt(Integer::intValue)
                 .sum();
         System.out.println("\n🎉 게임 종료! 총점: " + total + "점 🎉");
+        printBigDice();
+        System.out.println("수고하셨습니다! 또 만나요~ 👋\n");
+    }
+
+    // 거대한 주사위 출력 메서드
+    private static void printBigDice() {
+        System.out.println("\n");
+        for (String line : BIG_DICE) {
+            System.out.println("        " + line);
+        }
+        System.out.println("\n");
     }
 
     private static void initRules() {
