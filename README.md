@@ -1,4 +1,6 @@
 # Yacht Dice Game
+<img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/ffc106af-3941-4e85-920a-f2ec2abd387c" />
+
 
 Yacht Dice Game은 5개의 주사위를 사용해 12턴 동안 다양한 점수 규칙을 채워가는 **클래식 주사위 게임**입니다. 전략적으로 규칙을 선택해 **최고 점수**를 노려보세요!
 
@@ -32,19 +34,7 @@ Yacht Dice Game은 5개의 주사위를 사용해 12턴 동안 다양한 점수 
 | | **Yacht** | 5개 동일 → **50점** 고정 | `[4,4,4,4,4]` |
 
 ## 게임 플로우차트
-```mermaid
-graph TD
-    A[게임 시작] --> B[규칙 초기화]
-    B --> C{턴 1~12}
-    C --> D[주사위 굴리기]
-    D --> E[사용 가능 규칙 표시]
-    E --> F[사용자 선택]
-    F --> G[점수 기록]
-    G --> H[점수판 출력]
-    H --> I{턴 12 종료?}
-    I -->|NO| C
-    I -->|YES| J[최종 총점 계산]
-    J --> K[게임 종료]
+
 
 ## 폴더 구조
 
