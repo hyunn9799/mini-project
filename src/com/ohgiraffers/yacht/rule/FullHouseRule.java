@@ -1,8 +1,8 @@
-package com.ohgiraffers.pratice;
+package com.ohgiraffers.yacht.rule;
 
 import java.util.Map;
 
-import static com.ohgiraffers.pratice.YachtUtils.countDice;
+import static com.ohgiraffers.yacht.util.YachtUtils.countDice;
 
 public class FullHouseRule extends ScoreRule {
     public FullHouseRule() {

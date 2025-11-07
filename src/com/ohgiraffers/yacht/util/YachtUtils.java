@@ -1,4 +1,4 @@
-package com.ohgiraffers.pratice;
+package com.ohgiraffers.yacht.util;
 
 import java.util.Map;
 import java.util.HashMap;

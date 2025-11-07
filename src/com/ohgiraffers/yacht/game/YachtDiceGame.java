@@ -1,4 +1,6 @@
-package com.ohgiraffers.pratice;
+package com.ohgiraffers.yacht.game;
+
+import com.ohgiraffers.yacht.rule.*;
 
 import java.util.*;
 

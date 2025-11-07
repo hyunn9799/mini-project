@@ -1,4 +1,4 @@
-package com.ohgiraffers.pratice;
+package com.ohgiraffers.yacht.rule;
 
 public abstract class ScoreRule {
     protected String name;

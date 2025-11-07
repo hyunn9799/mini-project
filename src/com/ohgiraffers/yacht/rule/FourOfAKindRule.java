@@ -1,19 +1,20 @@
-package com.ohgiraffers.pratice;
+package com.ohgiraffers.yacht.rule;
 import java.util.Arrays;
 import java.util.Map;
 
-import static com.ohgiraffers.pratice.YachtUtils.countDice;
+import static com.ohgiraffers.yacht.util.YachtUtils.countDice;
 
-public class ThreeOfAKindRule extends ScoreRule {
-    public ThreeOfAKindRule() {
-        super("Three of a Kind");
+public class FourOfAKindRule extends ScoreRule {
+    public FourOfAKindRule() {
+        super("Four of a Kind");
     }
 
     @Override
     public int calculateScore(int[] dice) {
         Map<Integer, Integer> count = countDice(dice);
+
         for (int key : count.keySet()) {
-            if (count.get(key) >= 3) {
+            if (count.get(key) >= 4) {
                 return Arrays.stream(dice).sum();
             }
         }

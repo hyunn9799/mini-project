@@ -1,4 +1,4 @@
-package com.ohgiraffers.pratice;
+package com.ohgiraffers.yacht.rule;
 
 import java.util.Arrays;
 
