@@ -33,17 +33,12 @@ Yacht Dice Game은 5개의 주사위를 사용해 12턴 동안 다양한 점수 
 | | **Large Straight** | 5연속 → **40점** 고정 | `1-2-3-4-5`, `2-3-4-5-6` |
 | | **Yacht** | 5개 동일 → **50점** 고정 | `[4,4,4,4,4]` |
 
-## 게임 플로우차트
-
-
 ## 폴더 구조
 
-ID,요구사항,상세
-FR-01,게임 루프,12턴: 주사위→선택→기록→표시
-FR-02,주사위 시스템,1~6 난수 5개 생성
-FR-03,12가지 규칙,Ones~Yacht 전부 구현
-FR-12,상태 관리,미사용(-1)/사용(점수)
-FR-13~15,선택 UI,목록+예상점수+적용여부(⭕/❌)
-FR-16~17,입력 검증,"1~12, 미사용 규칙만"
-FR-18,실시간 점수판,매 턴 총점 표시
-FR-19,최종 정산,12개 점수 합계
+<img width="405" height="655" alt="image" src="https://github.com/user-attachments/assets/ff9d8779-e9b3-4add-9dcb-a8fa323f5e6d" />
+
+## 상속 구조
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3e5e0d86-7f86-4b4a-a479-79da577a7969" />
+
+
